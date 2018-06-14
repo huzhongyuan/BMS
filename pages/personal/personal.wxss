@@ -1,0 +1,151 @@
+/* pages/personal/personal.wxss */
+
+.bar {
+  background-color:  #2a82e4;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.bar image {
+  width: 24px;
+  height: 24px;
+}
+.bar:nth-child(1) {
+  display: flex;
+  align-items: center;
+}
+.bar:nth-child(2) {
+  color: #cccccc;
+}
+.header {
+  display: flex;
+  background-color: #2a82e4;
+  height: 150px;
+  justify-content: center;
+  flex-direction:column;
+}
+.avatar {
+width:80px;
+height:80px;
+text-align: center;
+line-height: 200px;
+font-weight: bold;
+font-size: 24px;
+background: burlywood;
+border-radius: 50%;
+}
+.avatarbox {
+  display: flex;
+  align-items:center;/*垂直居中*/
+  justify-content: center;/*水平居中*/
+}
+
+.nickname{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+    align-items:center;/*垂直居中*/
+  justify-content: center;/*水平居中*/
+  color: white;
+}
+
+.choice {
+    background-color: #2a82e4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #ccc;
+    height: 40px;
+}
+.choice :nth-child(1){
+  margin-right: 60px;
+  color: white;
+}
+.list{
+  color: #505050;
+  border: 1px solid #cccccc;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+}
+.title {
+  margin-left: 20px;
+}
+.value {
+  margin-right: 20px;
+  color: #cccccc;
+}
+
+
+.list1{
+  color: #505050;
+  border: 1px solid #cccccc;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+}
+.title1 {
+  margin-right: 20px;
+}
+
+.edit {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.edit :nth-child(n){
+  background-color: #2a82e4;
+  color: white;
+}
+
+.editButton {
+  width: 80%;
+}
+.storage {
+  width: 30%;
+}
+.cancel {
+  width: 30%;
+}
+
+.dataChioce{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  color: #505050;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 20px;
+}
+
+.histroyAllList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  border-bottom: 1px solid #cccccc;
+  height: 40px;
+  color: #505050;
+}
+.histroyAllList text {
+  margin-left: 18%;
+}
+.histroyAllList image{
+  width: 24px;
+  height: 24px;
+  margin-right: 18%;
+}
+
+.loadMore {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+.loadMore image {
+  width: 52px;
+  height: 46px;
+}

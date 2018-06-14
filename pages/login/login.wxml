@@ -1,0 +1,74 @@
+<!--pages/login/login.wxml-->
+<view class='header' style='position:relative;'>
+  <!-- <view  class='headTitle'>Login and Sign Up Here</view>  -->  
+  <image class='background' src='/images/background.png'></image>
+  <text class='text'>Log In and Sign Up Here</text>
+  <!-- <view class='getUser'>
+    <image class='userinfo-avatar' src='{{ userInfo.avatarUrl }}'></image>
+     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view> -->
+</view>
+<view class='content'>
+  <view class='checkBox'>
+    <view class='loginButton' bindtap='loginning' style='color: {{ loginColor }}'>登陆<view class='triangle_border_up'></view></view>
+    <view class='regestButton' bindtap='registing' style='color: {{ registColor }}'>注册<view class='triangle_border_up'></view></view>
+  </view>
+
+  <!-- 登陆 -->
+  <view class='checkContent' style='display: {{ Hidden1 }}'>
+    <view  class='infoBox'>
+      <!-- <icon  type="{{ phoneType }}" size="20" ></icon> -->
+      <image src='/images/user.ico'></image>
+      <input class='phoneNumber' bindinput='checkEmail' placeholder="请输入邮箱" />
+        <icon  type="{{ emailType }}" size="25" ></icon> 
+    </view>
+     <view  class='infoBox'>
+      <!-- <icon  type="{{ phoneType }}" size="20" ></icon> -->
+      <image src='/images/password.ico'></image>
+      <input class='phoneNumber' bindinput='checkPassword' password="true" placeholder="请输入密码" />
+        <icon  type="{{ passwordType }}" size="25" ></icon> 
+    </view>
+    <view class='forgetPassword'>忘记密码</view>
+    <view><button class='login' bindtap="primary" style='background-color: {{ loginButton }}'> primary </button></view>
+    </view>
+</view>
+
+<!-- 注册 -->
+<view class='registBox' style='display: {{ Hidden2 }}'>
+    <view  class='infoBox' style='margin-top:30px;'>
+      <!-- <icon  type="{{ phoneType }}" size="20" ></icon> -->
+      <image src='/images/user.ico'></image>
+      <input class='phoneNumber' bindinput='checkName' placeholder="请输入姓名" />
+        <icon  type="{{ nameType1 }}" size="25" ></icon> 
+    </view>
+    <view  class='infoBox'>
+      <!-- <icon  type="{{ phoneType }}" size="20" ></icon> -->
+      <image src='/images/user.ico'></image>
+      <input class='phoneNumber' bindinput='checkSex' placeholder="性别 男/女" />
+        <icon  type="{{ sexType1 }}" size="25" ></icon> 
+    </view>
+    <view  class='infoBox'>
+      <!-- <icon  type="{{ phoneType }}" size="20" ></icon> -->
+      <image src='/images/user.ico'></image>
+      <input class='phoneNumber' bindinput='checkEmail1' placeholder="请输入邮箱" />
+        <icon  type="{{ emailType1 }}" size="25" ></icon> 
+    </view>
+      <view  class='infoBox'>
+      <!-- <icon  type="{{ phoneType }}" size="20" ></icon> -->
+      <image src='/images/password.ico'></image>
+      <input class='phoneNumber' bindinput='checkPassword1' password="true" placeholder="请输入密码" />
+        <icon  type="{{ passwordType1 }}" size="25" ></icon> 
+    </view>
+     <view  class='infoBox' style='margin-bottom: 30px;'>
+      <!-- <icon  type="{{ phoneType }}" size="20" ></icon> -->
+      <image src='/images/password.ico'></image>
+      <input class='phoneNumber' bindinput='checkPassword2' password="true" placeholder="请再次输入密码" />
+        <icon  type="{{ checkPassword1 }}" size="25" ></icon> 
+    </view>
+    <view> <button class='login'  bindtap="rejest" style='background-color: {{ registButton }}'> rejest </button></view>
+
+</view>
+
+<view class='footer'>
+  Dont have an account? 
+</view>

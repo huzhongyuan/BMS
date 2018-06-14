@@ -1,0 +1,32 @@
+/* pages/histroy/histroy.wxss */
+.header {
+  display: flex;
+  background-color: #2a82e4;
+  height: 200px;
+  justify-content: center;
+  flex-direction:column;
+}
+.avatar {
+width:80px;
+height:80px;
+text-align: center;
+line-height: 200px;
+font-weight: bold;
+font-size: 24px;
+background: burlywood;
+border-radius: 50%;
+}
+.avatarbox {
+  display: flex;
+  align-items:center;/*垂直居中*/
+  justify-content: center;/*水平居中*/
+}
+
+.nickname{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+    align-items:center;/*垂直居中*/
+  justify-content: center;/*水平居中*/
+  color: white;
+}

@@ -1,0 +1,8 @@
+<!--pages/predictinfos/predictinfos.wxml-->
+<view class='header'>
+    <view class='avatarbox'>
+       <image class="avatar" bindtap='personal' src='{{userInfo.avatarUrl}}'></image>  
+    </view>
+    <view class="nickname" >{{userInfo.nickName}}</view>  
+
+</view>

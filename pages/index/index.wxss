@@ -1,0 +1,118 @@
+/**index.wxss**/
+.header {
+  display: flex;
+  background-color: #2a82e4;
+  height: 200px;
+  justify-content: center;
+  flex-direction:column;
+}
+.avatar {
+width:80px;
+height:80px;
+text-align: center;
+line-height: 200px;
+font-weight: bold;
+font-size: 24px;
+background: burlywood;
+border-radius: 50%;
+}
+.avatarbox {
+  display: flex;
+  align-items:center;/*垂直居中*/
+  justify-content: center;/*水平居中*/
+}
+
+.nickname{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+    align-items:center;/*垂直居中*/
+  justify-content: center;/*水平居中*/
+  color: white;
+}
+.histroy {
+  display: flex;
+  justify-content: flex-end;
+  align-items:center;
+  border-bottom: 1px solid #cccccc;
+  color: #505050;
+  font-size: 30rpx;
+  height: 40px;
+}
+.tohistory{
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  margin-left: 50%;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  color: #505050;
+  margin-bottom: 20px;
+  align-items:baseline;
+}
+.Label {
+  margin-top:15px;
+  font-size: 13px;
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap:wrap;
+}
+.Label text{
+  margin-bottom: 13px;
+  height: 30px;
+  width: 100%;
+  text-align: right;
+  overflow: hidden;
+}
+.con {
+  margin-top:20px;
+  width: 50%;
+  border: 1xp solid #cccccc;
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: column;
+}
+.con :nth-child(n+1) {
+    height: 30px;
+  border-bottom: 1px solid #cccccc;
+}
+.con :nth-child(n) {
+  margin-bottom: 12px;
+}
+
+.company {
+  margin-top:20px;
+  width: 20%;
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: column;
+  color: #505050;
+  font-size: 15px;
+}
+
+.company :nth-child(n) {
+    margin-bottom: 13px;
+    height: 30px;
+}
+
+.Choice {
+  padding-top: 2px;
+  display: flex;
+  justify-content: flex-start;
+  align-items:flex-end;/*垂直居中*/
+}
+.Picker {
+  height: 30px;
+    display: flex;
+  justify-content: center;
+}
+
+.serch button {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  background-color: #2a82e4;
+}

@@ -1,0 +1,64 @@
+<!--pages/personal/personal.wxml-->
+<view class='bar'>
+  <view>
+    <!-- <image src="/images/back.png"></image> 
+    <text> back</text> -->
+  </view>
+  <view bindtap='out'>登出</view>
+</view>
+<view class='header'>
+    <view class='avatarbox'>
+       <image class="avatar" bindtap='personal' src='{{userInfo.avatarUrl}}'></image>  
+    </view>
+    <view class="nickname" >{{userInfo.nickName}}</view>  
+
+</view>
+<view class='choice'>
+  <view class='person' bindtap='personInfo' style='color: {{ personColor }}'>个人信息</view>
+  <view class='histroy' bindtap='histroyInfo' style='color: {{ histroyColor }}'>历史查询</view>
+</view>
+
+<!-- 查看个人信息 -->
+<view class='personalShow' style='display:{{ personalShow }}'>
+  <view class='content' style='display: {{ showPersonInfo }}'>
+    <view class='list' wx:key="*this" wx:for="{{items}}">
+      <text class='title'>{{ item.title }}</text>
+      <text class='value'>{{ item.value}}</text>
+    </view>
+  </view> 
+
+  <view class='content1' style='display: {{ editPersonInfo }}'>
+    <view class='list1' wx:key="*this" wx:for="{{items}}">
+      <text class='title1'>{{ item.title }}:</text>
+      <input class='value1' type="text1" value='{{item.value}}' bindinput='{{ item.name }}' style='border: 1px solid #cccccc;'/>
+    </view>
+  </view>
+
+  <view class='edit' >
+    <button  class='editButton' bindtap="edit" style='display: {{ editButton }}'>编辑</button>
+    <button class='storage' bindtap='storage' style='display: {{ storageButton}}'>确定</button>
+    <button class='cancel' bindtap='cancel' style='display: {{ cancelButton }}'>取消</button>
+  </view>
+</view>
+
+<!-- 查看历史查询 -->
+<view class='histroyShow' style='display: {{ histroyShow }}'>
+  <!-- 日期 -->
+  <view class="section">
+  <picker mode="date" value="{{endTime}}" start="2016-1-01" end="{{ endTime }}" bindchange="bindDateChange">
+    <view class="picker dataChioce" >
+      日期选择: {{date}}
+    </view>
+  </picker>
+  </view>
+
+  <!-- 历史列表 -->
+  <view class='histroyAllList' wx:for = '{{ listHistroys }}' bindtap='toDetail' data-index=' {{ index }}' wx:key="*this">
+    <text class='toDetailInfo'>{{ item.advices.id }}</text>
+    <image src='/images/tohistroy.png'></image>
+  </view>
+
+  <view class='loadMore' style='display: {{ loadMoreLogo }}'>
+    <image bindtap='loadMore' src='/images/loadMore.png'></image>
+  </view>
+</view>

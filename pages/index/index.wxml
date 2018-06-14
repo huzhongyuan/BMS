@@ -1,0 +1,63 @@
+<!--index.wxml-->
+<view class='header'>
+    <view class='avatarbox'>
+       <image class="avatar" bindtap='personal' src='{{userInfo.avatarUrl}}'></image>  
+    </view>
+    <view class="nickname">{{userInfo.nickName}}</view>  
+</view>
+<view class='histroy' bindtap='histroy'>
+  <text class='htext'>查看历史查询</text>
+  <image class='tohistory' src='/images/tohistroy.png'></image>
+</view>
+<view class='content'>
+  <view class='Label'>
+    <text class='name'>性别：</text>
+    <text class='name'>姓名：</text>
+    <text class='age'>年龄：</text>
+    <text class='height'>身高：</text>
+    <text class='name'>体重：</text>
+    <text class='name'>骨密度：</text>
+    <text class='age'>血蛋白含量：</text>
+    <text class='height'>盖含量：</text>
+    <text class='name'>磷含量：</text>
+        <text class='name'>碱性磷酸酶含量：</text>
+    <text class='age'>血红蛋白含量：</text>
+    <text class='height'> 淋巴细胞含量：</text>
+  </view>
+  <view class='con'>
+  <radio-group class="radio-group" bindchange="radioChange">
+    <label class="radio" wx:for="{{items}}">
+      <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+    </label>
+  </radio-group>
+    <input  placeholder='Name' type='text'     bindinput='inputName' />
+    <input  placeholder='Age' type='number'    bindinput='inputAge'/>
+    <input  placeholder='height' type='number' bindinput='inputHeight'/>
+    <input  placeholder='weight' type='number' bindinput='inputWeight'/>
+
+    <input placeholder='bmd'  type='text'   bindinput='inputBmd' />
+    <input placeholder='alb'  type='number' bindinput='inputAlb' />
+    <input placeholder='ca'   type='number' bindinput='inputCa'/>
+    <input placeholder='p'    type='number' bindinput='inputP'/>
+    <input placeholder='alp'  type='number' bindinput='inputAlp'/>
+    <input placeholder='hb'   type='number' bindinput='inputHb'/>
+    <input placeholder='lym'  type='text'   bindinput='inputLym' />
+  </view>
+  <view class='company'>
+    <text>-</text>
+    <text>-</text>
+    <text>岁</text>
+    <text>cm</text>
+    <text>kg</text>
+    <text>-</text>
+    <text>-</text>
+    <text>-</text>
+    <text>-</text>
+    <text>-</text>
+    <text>-</text>
+    <text>-</text>
+  </view>
+</view>
+<view class='serch'>
+  <button type="primary" bindtap='serch'> 查询 </button>
+</view>
